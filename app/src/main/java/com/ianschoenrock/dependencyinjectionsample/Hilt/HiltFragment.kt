@@ -26,7 +26,7 @@ class HiltFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_hilt, container, false).apply{
-
+            //Adding View References
             serviceTV = findViewById(R.id.hilt_service_text_tv)
             nestedServiceTV = findViewById(R.id.hilt_nested_text_tv)
             //Hilt service is ready to go, no need to initialize a component
