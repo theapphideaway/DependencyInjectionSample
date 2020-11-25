@@ -7,4 +7,5 @@ This is a sample application using Dagger2 and Hilt example implementations. Thi
 
 
 # Hilt Implementation Screen
-![hilt_screenshot](https://user-images.githubusercontent.com/32747586/100229848-16816f00-2ee2-11eb-89aa-554a29e8ddc3.png)
+![hilt_screenshot](https://user-images.githubusercontent.com/32747586/100230255-b50dd000-2ee2-11eb-81da-d91d20965ae0.png)
+
