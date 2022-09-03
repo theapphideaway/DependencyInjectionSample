@@ -14,11 +14,15 @@ import javax.inject.Inject
 @AndroidEntryPoint
 class HiltFragment : Fragment() {
 
+    //Services
     @Inject lateinit var hiltService: HiltService
     @Inject lateinit var hiltParentService: HiltParentService
+    @Inject lateinit var hiltContextService: HiltContextService
 
+    //Views
     private lateinit var serviceTV: TextView
     private lateinit var nestedServiceTV: TextView
+    private lateinit var contextTV: TextView
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -29,10 +33,13 @@ class HiltFragment : Fragment() {
             //Adding View References
             serviceTV = findViewById(R.id.hilt_service_text_tv)
             nestedServiceTV = findViewById(R.id.hilt_nested_text_tv)
+            contextTV = findViewById(R.id.hilt_context_tv)
+
             //Hilt service is ready to go, no need to initialize a component
             //  since this is using constructor injection
             serviceTV.text = hiltService.getData()
             nestedServiceTV.text = hiltParentService.getParentData()
+            contextTV.text = hiltContextService.getContext()
         }
     }
 }

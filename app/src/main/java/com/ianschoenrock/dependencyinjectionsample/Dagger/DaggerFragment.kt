@@ -9,8 +9,8 @@ import android.widget.Button
 import android.widget.TextView
 import com.ianschoenrock.dependencyinjectionsample.Hilt.HiltFragment
 import com.ianschoenrock.dependencyinjectionsample.R
+import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
-
 
 class DaggerFragment : Fragment() {
 
